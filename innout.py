@@ -1,8 +1,8 @@
-innout_dict = {'doubledouble': 3.45, 'hamburger' : 2.10, 'cheeseburger' : 2.40, 'frenchfries': 1.60,
-'dblcombo': 6.70, 'hamcombo': 5.35, 'cheesecombo': 5.65,
-'smalldrink': 1.50, 'mediumdrink': 1.65, 'largedrink': 1.85, 'xlargedrink': 2.05,
-'milkshake': 2.15, 'milk': 0.99, 'coffee':1.35,
-'3x3': 4.45, '4x4': 5.50, 'animalfries': 3.40}
+innout_dict = {'doubledouble': 4.85, 'hamburger' : 3.05, 'cheeseburger' : 3.40, 'frenchfries': 2.10,
+'dblcombo': 8.95, 'hamcombo': 7.15, 'cheesecombo': 7.50,
+'smalldrink': 1.85, 'mediumdrink': 2.00, 'largedrink': 2.20, 'xlargedrink': 2.40,
+'milkshake': 2.75, 'milk': 0.99, 'coffee':1.25,
+'3x3': .0, '4x4': .0, 'animalfries': .0}
 
 keyboard_dict = {
 'q': 'doubledouble', 'w': 'hamburger', 'e': 'cheeseburger', 'r': 'frenchfries', 
@@ -14,6 +14,7 @@ counter = 0.0
 while True:
     ret = input('value: ')
     if ret == 'p':
+        counter = counter*1.0725
         print('last person owes ' + str(round(counter, 2)))
         break
     if ret == ' ':
